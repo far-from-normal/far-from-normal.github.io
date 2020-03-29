@@ -183,12 +183,12 @@ def get_roto_stats(df_p, df_b):
         pts_col = col + '_pts'
         order = pts_cat[col]
         roto_stats[pts_col] = roto_stats[col].rank(
-            method='min', 
+            method='average', 
             ascending=order).astype(np.int32)
 
     roto_stats['Total_pts'] = roto_stats.loc[:, 'R_pts':'SV_pts'].sum(axis = 1)
     roto_stats['Rank'] = roto_stats['Total_pts'].rank(
-        method='min', 
+        method='average', 
         ascending=False).astype(np.int32)
 
     cols = list(roto_stats)

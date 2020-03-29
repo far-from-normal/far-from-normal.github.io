@@ -84,7 +84,8 @@ for k, v in format_dict.items():
 footer_dict = {
     "OOTP Sim Data": "https://www.sports-reference.com/blog/2020/03/baseball-reference-simulating-2020-season-with-out-of-the-park-baseball-21/",
     "Batting": "https://www.baseball-reference.com/sim/leagues/MLB/2020-batting.shtml",
-    "Pitching": "https://www.baseball-reference.com/sim/leagues/MLB/2020-pitching.shtml"
+    "Pitching": "https://www.baseball-reference.com/sim/leagues/MLB/2020-pitching.shtml",
+    "About this Roto": "https://github.com/far-from-normal/far-from-normal.github.io"
 }
 footer = pd.DataFrame.from_dict(footer_dict, orient='index')
 footer.columns = ['Source']
