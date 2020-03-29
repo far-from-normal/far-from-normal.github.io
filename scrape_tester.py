@@ -1,8 +1,12 @@
 from scrape_roto import *
 from pathlib import Path
 import seaborn as sns
+import datetime
 
 pd.options.display.float_format = '${:,.2f}'.format
+
+def make_clickable(val):
+    return '<a href="{}">{}</a>'.format(val,val)
 
 def hover(hover_color="#ffff99"):
     return dict(selector="tr:hover",
@@ -62,10 +66,8 @@ print(df_p.head(5))
 
 roto_stats = get_roto_stats(df_p, df_b)
 
-# cm = sns.light_palette("seagreen", as_cmap=True)
-# styled_table = table.style.background_gradient(cmap=cm)
-# styled_table
-format_dict = {
+type_dict = {
+    'Rank': np.int32,
     'R': np.int32,
     'HR': np.int32,
     'OBP': np.float16,
@@ -76,8 +78,45 @@ format_dict = {
     'SO': np.int32,
     'WHIP': np.float16,
     'SV': np.int32,
+    'R_pts': np.float16,
+    'HR_pts': np.float16,
+    'OBP_pts': np.float16,
+    'SLG_pts': np.float16,
+    'NSB_pts': np.float16,
+    'RA_pts': np.float16,
+    'HRA_pts': np.float16,
+    'SO_pts': np.float16,
+    'WHIP_pts': np.float16,
+    'SV_pts': np.float16,
+    'Total_pts': np.float16,
 }
-for k, v in format_dict.items():
+
+format_dict = {
+    'Rank': "{:d}",
+    'R': "{:d}",
+    'HR': "{:d}",
+    'OBP': "{:.3f}",
+    'SLG': "{:.3f}",
+    'NSB': "{:d}",
+    'RA': "{:d}",
+    'HRA': "{:d}",
+    'SO': "{:d}",
+    'WHIP': "{:.3f}",
+    'SV': "{:d}",
+    'R_pts': "{:.1f}",
+    'HR_pts': "{:.1f}",
+    'OBP_pts': "{:.1f}",
+    'SLG_pts': "{:.1f}",
+    'NSB_pts': "{:.1f}",
+    'RA_pts': "{:.1f}",
+    'HRA_pts': "{:.1f}",
+    'SO_pts': "{:.1f}",
+    'WHIP_pts': "{:.1f}",
+    'SV_pts': "{:.1f}",
+    'Total_pts': "{:.1f}",
+}
+
+for k, v in type_dict.items():
     roto_stats[k] = roto_stats[k].astype(v)
 
 # %% Header
@@ -90,11 +129,6 @@ footer_dict = {
 footer = pd.DataFrame.from_dict(footer_dict, orient='index')
 footer.columns = ['Source']
 print(footer.head(5))
-
-
-def make_clickable(val):
-    return '<a href="{}">{}</a>'.format(val,val)
-
 
 styles_footer = [
     hover(),
@@ -113,7 +147,6 @@ styled_footer = footer.style.set_table_styles(styles_footer) \
     .set_table_attributes("style='display:inline'")
 
 # %% Table
-import datetime
 mydate = datetime.datetime.now()
 year = mydate.strftime("%Y")
 month = mydate.strftime("%B")
@@ -135,7 +168,7 @@ styles = [
 
 styled_table = roto_stats.style.set_table_styles(styles) \
     .hide_index() \
-    .set_precision(3) \
+    .format(format_dict) \
     .background_gradient(cmap) \
     .set_properties(**{'font-size': '10pt', 'font-family': 'Helvetica'}) \
     .set_caption("The Mac-3-Pitch Bush League: last updated " + date_str) \
@@ -150,29 +183,3 @@ html_footer = styled_footer.render()
 with open("index.html", "w+") as file:
     file.write(html_table)
     file.write(html_footer)
-
-
-
-# full_path_gdrive = Path.home().joinpath(
-#     # "Documents",
-#     # "Datum",
-#     # "Projects",
-#     # "Baseball",
-#     # "bref-2020-ootp-scrape",
-#     "Dropbox",
-#     "FantasyBB",
-#     "index.html"
-# )
-
-# print(full_path_gdrive)
-
-# with open(full_path_gdrive, "w+") as file:
-#     file.write(html_table)
-#     file.write(html_footer)
-
-# roto_stats.to_csv(
-#     'roto_stats.csv', 
-#     index=False, 
-#     float_format='%.3f'
-#     )
-# print(roto_stats.head(5))
