@@ -64,15 +64,9 @@ df_b_output.to_csv(
     float_format='%.3f'
     )
 
-print("input b")
-print(df_b_output.head(5))
-
 # %%
 
 roto_stats = get_roto_stats(df_p, df_b)
-
-print("roto_stats 0")
-print(roto_stats.head(5))
 
 type_dict = {
     'Rank': np.int32,
@@ -140,7 +134,6 @@ footer_dict = {
 }
 footer = pd.DataFrame.from_dict(footer_dict, orient='index')
 footer.columns = ['Source']
-print(footer.head(5))
 
 styles_footer = [
     hover(),
@@ -186,11 +179,9 @@ styled_table = roto_stats.style.set_table_styles(styles) \
     .set_caption("The Mac-3-Pitch Bush League: last updated " + date_str) \
     .set_table_attributes("style='display:inline'")
 
-
 # %% Write
 html_table = styled_table.render()
 html_footer = styled_footer.render()
-# print(html_table)
 
 with open("index.html", "w+") as file:
     file.write(html_table)

@@ -178,11 +178,7 @@ def get_roto_stats(df_p, df_b):
         teams_b, 
         teams_p)
 
-    print("before backwards")
-    print(roto_stats)
     roto_stats = get_backward_ip(roto_stats)
-    print("backwards")
-    print(roto_stats)
 
     pts_cat = {
         'R': True,
@@ -199,9 +195,6 @@ def get_roto_stats(df_p, df_b):
 
     exclude_rank = ['PA', 'IP']
 
-    print("roto_stats 1")
-    print(roto_stats.head(5))
-
     for col in roto_stats.columns[1:]:
         if col not in exclude_rank:
             pts_col = col + '_pts'
@@ -210,16 +203,10 @@ def get_roto_stats(df_p, df_b):
                 method='average', 
                 ascending=order) #.astype(np.int32)
 
-    print("roto_stats 2")
-    print(roto_stats.head(5))
-
     roto_stats['Total_pts'] = roto_stats.loc[:, 'R_pts':'SV_pts'].sum(axis = 1)
     roto_stats['Rank'] = roto_stats['Total_pts'].rank(
         method='average', 
         ascending=False) #.astype(np.int32)
-
-    print("roto_stats 3")
-    print(roto_stats.head(5))
 
     cols = list(roto_stats)
     cols.insert(1, cols.pop(cols.index('Rank')))
@@ -229,8 +216,5 @@ def get_roto_stats(df_p, df_b):
         ascending=True, 
         inplace=True
         )
-
-    print("roto_stats 4")
-    print(roto_stats.head(5))
 
     return roto_stats
