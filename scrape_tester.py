@@ -81,7 +81,7 @@ type_dict = {
     'OBP': np.float16,
     'SLG': np.float16,
     'NSB': np.int32,
-    'IP': np.int32,
+    'IP': np.float16,
     'RA': np.int32,
     'HRA': np.int32,
     'SO': np.int32,
