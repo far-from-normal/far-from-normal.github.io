@@ -63,6 +63,14 @@ def get_slg(df):
 def get_whip(df):
     df['WHIP'] = (df['H'] + df['BB']) / df['IP']
     return df
+def get_ip(df):
+    df['IP_str'] = df['IP'].astype(str)
+    print(df['IP_str'].str.split('.'))
+    print(df['IP_str'].str.split('.').str[0])
+    df['IP'] = \
+        df['IP_str'].str.split('.').str[0].astype(float) + \
+        0.333*df['IP_str'].str.split('.').str[1].astype(float)
+    return df
 
 def batter_stats_augment(df):
     # R, HR, OPB, SLG, NSB
@@ -72,7 +80,8 @@ def batter_stats_augment(df):
 
 def pitcher_stats_augment(df):
     # R, HR, WHIP, SO, SV
-    df = get_whip(df)
+    df = get_ip(df)
+    # df = get_whip(df)
     return df
 
 def team_pitcher_stats(df):

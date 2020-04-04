@@ -23,6 +23,7 @@ b_data = get_data(url_batter)
 
 
 # %% augment data witha few stats
+p_data = pitcher_stats_augment(p_data)
 b_data = batter_stats_augment(b_data)
 
 # %% get team-players
