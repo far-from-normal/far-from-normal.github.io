@@ -21,6 +21,7 @@ url_batter = base_url + "batting.shtml"
 p_data = get_data(url_pitcher)
 b_data = get_data(url_batter)
 
+
 # %% augment data witha few stats
 b_data = batter_stats_augment(b_data)
 
@@ -42,37 +43,45 @@ df_b = assign_players_to_teams(
     'Bats'
     )
 
-df_p_outout = df_p[["Team_Name", "player", 'R', 'HR', 'SO', 'whip', 'SV']]
-df_p_outout.columns = ["Team_Name", "player", 'RA', 'HRA', 'SO', 'WHIP', 'SV']
 
-df_b_outout = get_nsb(df_b)
-df_b_outout = df_b_outout[["Team_Name", "player", 'R', 'HR', 'onbase_perc', 'slugging_perc', 'NSB']]
-df_b_outout.columns = ["Team_Name", "player", 'R', 'HR', 'OBP', 'SLG', 'NSB']
 
-df_p_outout.to_csv(
+df_p_output = df_p[["Team_Name", "player", 'IP', 'R', 'HR', 'SO', 'whip', 'SV']]
+df_p_output.columns = ["Team_Name", "player", 'IP', 'RA', 'HRA', 'SO', 'WHIP', 'SV']
+
+df_b_output = get_nsb(df_b)
+df_b_output = df_b_output[["Team_Name", "player", 'PA', 'R', 'HR', 'onbase_perc', 'slugging_perc', 'NSB']]
+df_b_output.columns = ["Team_Name", "player", 'PA', 'R', 'HR', 'OBP', 'SLG', 'NSB']
+
+df_p_output.to_csv(
     'pitcher_by_team.csv', 
     index=False, 
     float_format='%.3f'
     )
-df_b_outout.to_csv(
+df_b_output.to_csv(
     'batter_by_team.csv', 
     index=False, 
     float_format='%.3f'
     )
 
-print(df_p.head(5))
+print("input b")
+print(df_b_output.head(5))
 
 # %%
 
 roto_stats = get_roto_stats(df_p, df_b)
 
+print("roto_stats 0")
+print(roto_stats.head(5))
+
 type_dict = {
     'Rank': np.int32,
+    'PA': np.int32,
     'R': np.int32,
     'HR': np.int32,
     'OBP': np.float16,
     'SLG': np.float16,
     'NSB': np.int32,
+    'IP': np.int32,
     'RA': np.int32,
     'HRA': np.int32,
     'SO': np.int32,
@@ -93,12 +102,14 @@ type_dict = {
 
 format_dict = {
     'Rank': "{:d}",
+    'PA': "{:d}",
     'R': "{:d}",
     'HR': "{:d}",
     'OBP': "{:.3f}",
     'SLG': "{:.3f}",
     'NSB': "{:d}",
-    'RA': "{:d}",
+    'IP': "{:d}",
+    'RA': "{:.3f}",
     'HRA': "{:d}",
     'SO': "{:d}",
     'WHIP': "{:.3f}",

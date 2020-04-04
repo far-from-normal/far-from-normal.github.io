@@ -91,8 +91,8 @@ def team_pitcher_stats(df):
     df = df.groupby(["Team_Name"]).sum()
     df.reset_index(inplace=True)
     df = get_whip(df)
-    df = df[["Team_Name", 'R', 'HR', 'SO', 'WHIP', 'SV']]
-    df.columns = ["Team_Name", 'RA', 'HRA', 'SO', 'WHIP', 'SV']
+    df = df[["Team_Name", 'IP', 'R', 'HR', 'SO', 'WHIP', 'SV']]
+    df.columns = ["Team_Name", 'IP', 'RA', 'HRA', 'SO', 'WHIP', 'SV']
     return df
 
 def team_batter_stats(df):
@@ -117,7 +117,7 @@ def team_batter_stats(df):
     df.reset_index(inplace=True)
     df = get_obp(df)
     df = get_slg(df)
-    df = df[["Team_Name", 'R', 'HR', 'OBP', 'SLG', 'NSB']]
+    df = df[["Team_Name", 'PA', 'R', 'HR', 'OBP', 'SLG', 'NSB']]
     return df
 
 
@@ -179,17 +179,29 @@ def get_roto_stats(df_p, df_b):
         'SV': True,
     }
 
+    exclude_rank = ['PA', 'IP']
+
+    print("roto_stats 1")
+    print(roto_stats.head(5))
+
     for col in roto_stats.columns[1:]:
-        pts_col = col + '_pts'
-        order = pts_cat[col]
-        roto_stats[pts_col] = roto_stats[col].rank(
-            method='average', 
-            ascending=order) #.astype(np.int32)
+        if col not in exclude_rank:
+            pts_col = col + '_pts'
+            order = pts_cat[col]
+            roto_stats[pts_col] = roto_stats[col].rank(
+                method='average', 
+                ascending=order) #.astype(np.int32)
+
+    print("roto_stats 2")
+    print(roto_stats.head(5))
 
     roto_stats['Total_pts'] = roto_stats.loc[:, 'R_pts':'SV_pts'].sum(axis = 1)
     roto_stats['Rank'] = roto_stats['Total_pts'].rank(
         method='average', 
         ascending=False) #.astype(np.int32)
+
+    print("roto_stats 3")
+    print(roto_stats.head(5))
 
     cols = list(roto_stats)
     cols.insert(1, cols.pop(cols.index('Rank')))
@@ -199,5 +211,8 @@ def get_roto_stats(df_p, df_b):
         ascending=True, 
         inplace=True
         )
+
+    print("roto_stats 4")
+    print(roto_stats.head(5))
 
     return roto_stats
