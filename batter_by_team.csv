@@ -29,7 +29,7 @@ MF,Victor Robles,38.000,5.000,1.000,0.211,0.286,0.000
 MF,Eddie Rosario,15.000,1.000,0.000,0.333,0.286,0.000
 MF,Shin-Soo Choo,41.000,5.000,0.000,0.268,0.121,0.000
 MF,Bryan Reynolds,33.000,3.000,0.000,0.303,0.333,0.000
-TBH,Robinson Chirinos,38.000,8.000,3.000,0.447,0.621,0.000
+TBH,Travis d'Arnaud,18.000,2.000,1.000,0.222,0.412,0.000
 TBH,Cody Bellinger,38.000,3.000,0.000,0.211,0.257,1.000
 TBH,Kolten Wong,43.000,10.000,0.000,0.419,0.405,3.000
 TBH,Dansby Swanson,4.000,1.000,0.000,0.500,0.500,0.000
@@ -68,7 +68,7 @@ McKnight Auto Braves,Ronald Acuna Jr.,41.000,5.000,3.000,0.244,0.500,-1.000
 McKnight Auto Braves,Eloy Jimenez,42.000,4.000,0.000,0.381,0.235,0.000
 McKnight Auto Braves,Alex Verdugo,,,,,,
 McKnight Auto Braves,Adalberto Mondesi,37.000,11.000,2.000,0.432,0.667,5.000
-McKnight Auto Braves,Shogo Akiyama,34.000,5.000,0.000,0.382,0.333,0.000
+McKnight Auto Braves,Kevin Newman,32.000,1.000,0.000,0.250,0.214,1.000
 WillieWillieBummer,Omar Narvaez,23.000,5.000,1.000,0.391,0.450,0.000
 WillieWillieBummer,Matt Olson,43.000,7.000,1.000,0.419,0.313,0.000
 WillieWillieBummer,Keston Hiura,35.000,3.000,1.000,0.343,0.452,0.000
@@ -99,8 +99,7 @@ B.Ruth is Dominican,George Springer,43.000,7.000,2.000,0.326,0.371,1.000
 B.Ruth is Dominican,Marcell Ozuna,37.000,3.000,1.000,0.297,0.394,0.000
 B.Ruth is Dominican,David Dahl,42.000,6.000,4.000,0.452,0.805,0.000
 B.Ruth is Dominican,Khris Davis,41.000,6.000,5.000,0.317,0.684,0.000
-DC,Will Smith,32.000,2.000,1.000,0.250,0.345,1.000
-DC,Will Smith,0.000,0.000,0.000,,,0.000
+DC,Will Smith,,,,,,
 DC,Pete Alonso,42.000,4.000,2.000,0.214,0.342,0.000
 DC,Max Muncy,37.000,6.000,2.000,0.297,0.375,1.000
 DC,Corey Seager,39.000,8.000,1.000,0.526,0.697,1.000

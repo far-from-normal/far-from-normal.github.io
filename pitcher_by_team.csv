@@ -1,6 +1,6 @@
 Team_Name,player,IP,RA,HRA,SO,WHIP,SV
 Yates of Ketel,Lucas Giolito,12.333,3.000,1.000,18.000,1.216,0.000
-Yates of Ketel,Miles Mikolas,,,,,,
+Yates of Ketel,Marco Gonzales,12.333,2.000,0.000,9.000,0.973,0.000
 Yates of Ketel,Julio Teheran,15.667,3.000,0.000,10.000,0.702,0.000
 Yates of Ketel,Sandy Alcantara,10.333,5.000,2.000,7.000,1.355,0.000
 Yates of Ketel,Dustin May,,,,,,
@@ -32,10 +32,10 @@ MF,John Brebbia,4.000,1.000,1.000,4.000,0.500,0.000
 TBH,Madison Bumgarner,13.333,2.000,0.000,15.000,1.050,0.000
 TBH,Cole Hamels,,,,,,
 TBH,Dallas Keuchel,12.000,5.000,0.000,8.000,1.417,0.000
-TBH,Mike Foltynewicz,10.000,6.000,1.000,8.000,1.500,0.000
+TBH,Michael Kopech,,,,,,
 TBH,Masahiro Tanaka,8.667,10.000,3.000,9.000,1.846,0.000
 TBH,Carlos Martinez,9.667,4.000,1.000,19.000,1.138,0.000
-TBH,Hansel Robles,1.667,2.000,1.000,3.000,3.600,1.000
+TBH,Craig Kimbrel,3.667,2.000,0.000,4.000,1.636,2.000
 TBH,Zack Britton,4.000,1.000,0.000,7.000,1.500,0.000
 TBH,Adam Ottavino,3.000,0.000,0.000,3.000,0.333,0.000
 TBH,Kenley Jansen,4.333,1.000,1.000,5.000,0.462,5.000
@@ -63,7 +63,7 @@ McKnight Auto Braves,Walker Buehler,14.000,3.000,2.000,21.000,0.786,0.000
 McKnight Auto Braves,Mike Clevinger,,,,,,
 McKnight Auto Braves,Luke Weaver,12.667,4.000,2.000,7.000,1.342,0.000
 McKnight Auto Braves,Eduardo Rodriguez,11.333,8.000,5.000,14.000,1.765,0.000
-McKnight Auto Braves,Nate Pearson,10.333,4.000,1.000,16.000,1.452,0.000
+McKnight Auto Braves,Aaron Civale,10.667,7.000,2.000,5.000,0.750,0.000
 McKnight Auto Braves,Taylor Rogers,2.333,2.000,0.000,4.000,2.571,0.000
 McKnight Auto Braves,Brad Hand,5.333,3.000,1.000,7.000,0.938,5.000
 McKnight Auto Braves,Tommy Kahnle,2.000,1.000,0.000,3.000,1.500,0.000
@@ -93,12 +93,12 @@ B.Ruth is Dominican,Jose Berrios,12.667,5.000,3.000,9.000,1.579,0.000
 B.Ruth is Dominican,Charlie Morton,13.667,4.000,0.000,8.000,1.098,0.000
 B.Ruth is Dominican,Patrick Corbin,9.333,5.000,0.000,11.000,1.393,0.000
 B.Ruth is Dominican,Andrew Heaney,7.667,11.000,3.000,8.000,2.739,0.000
-B.Ruth is Dominican,Jonathan Loaisiga,8.667,7.000,2.000,15.000,1.500,0.000
+B.Ruth is Dominican,Jose Leclerc,3.667,1.000,0.000,8.000,1.909,1.000
 B.Ruth is Dominican,Hector Neris,1.000,3.000,2.000,2.000,3.000,0.000
 B.Ruth is Dominican,Brandon Kintzler,4.000,1.000,0.000,4.000,1.000,2.000
 B.Ruth is Dominican,Sean Doolittle,4.667,2.000,0.000,5.000,1.071,1.000
 B.Ruth is Dominican,Keone Kela,4.333,0.000,0.000,9.000,0.692,0.000
-B.Ruth is Dominican,Jose Leclerc,3.667,1.000,0.000,8.000,1.909,1.000
+B.Ruth is Dominican,Gwang-Hyun Kim,,,,,,
 DC,Stephen Strasburg,9.667,7.000,3.000,8.000,1.448,0.000
 DC,Julio Urias,5.000,3.000,0.000,6.000,1.600,0.000
 DC,Brandon Woodruff,9.000,10.000,2.000,13.000,1.778,0.000
@@ -114,7 +114,7 @@ A Red Sock,Max Scherzer,15.000,1.000,1.000,15.000,0.800,0.000
 A Red Sock,Jack Flaherty,12.000,2.000,0.000,14.000,1.083,0.000
 A Red Sock,Archie Bradley,3.333,1.000,0.000,5.000,1.500,3.000
 A Red Sock,Marcus Stroman,13.000,3.000,0.000,13.000,1.231,0.000
-A Red Sock,John Means,7.667,9.000,3.000,1.000,1.565,0.000
+A Red Sock,J.A. Happ,13.667,4.000,1.000,16.000,1.024,0.000
 A Red Sock,Steven Matz,12.667,5.000,0.000,11.000,1.026,0.000
 A Red Sock,Ken Giles,3.000,3.000,0.000,4.000,2.333,1.000
 A Red Sock,Matt Barnes,3.000,0.000,0.000,4.000,1.000,0.000
@@ -123,11 +123,11 @@ Againbetterlookinbro,Justin Verlander,19.667,10.000,4.000,24.000,1.271,0.000
 Againbetterlookinbro,Clayton Kershaw,11.667,7.000,0.000,13.000,1.457,0.000
 Againbetterlookinbro,Corey Kluber,13.667,3.000,1.000,12.000,0.805,0.000
 Againbetterlookinbro,Garrett Richards,11.333,6.000,3.000,14.000,1.147,0.000
-Againbetterlookinbro,Shohei Ohtani,10.667,8.000,3.000,15.000,1.125,0.000
+Againbetterlookinbro,Diego Castillo,3.000,2.000,1.000,2.000,1.667,0.000
 Againbetterlookinbro,Joey Lucchesi,11.000,5.000,3.000,12.000,1.000,0.000
 Againbetterlookinbro,Josh Hader,3.000,1.000,1.000,8.000,1.000,2.000
 Againbetterlookinbro,Michael Lorenzen,3.000,1.000,0.000,4.000,1.333,0.000
-Againbetterlookinbro,Ty Buttrey,3.000,1.000,0.000,3.000,0.667,0.000
+Againbetterlookinbro,Pedro Baez,3.667,4.000,1.000,2.000,2.455,0.000
 Againbetterlookinbro,Ryan Pressly,4.000,3.000,0.000,5.000,2.000,1.000
 Tyrants,Carlos Carrasco,,,,,,
 Tyrants,James Paxton,,,,,,

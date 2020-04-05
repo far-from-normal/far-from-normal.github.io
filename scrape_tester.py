@@ -20,6 +20,7 @@ url_batter = base_url + "batting.shtml"
 # %% Raw data pull
 p_data = get_data(url_pitcher)
 b_data = get_data(url_batter)
+b_data = b_data[(b_data["player"]!="Will Smith") & (b_data["team_ID"]!="ATL")]
 
 
 # %% augment data witha few stats
@@ -27,10 +28,8 @@ p_data = pitcher_stats_augment(p_data)
 b_data = batter_stats_augment(b_data)
 
 # %% get team-players
-df_teams = pd.read_excel("Fantasy_TeamList_1.xlsx")  
+df_teams = pd.read_excel("Fantasy_TeamList_032820.xlsx")
 df_teams = process_teams(df_teams)
-
-
 
 # %% team pitchers / batters
 df_p = assign_players_to_teams(

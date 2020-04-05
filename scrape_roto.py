@@ -35,7 +35,8 @@ def get_data(url):
         fill_value=None
     )
     long.reset_index(inplace=True)
-    long.drop(columns=['idx', 'team_ID'], inplace=True)
+    # long.drop(columns=['idx', 'team_ID'], inplace=True)
+    long.drop(columns=['idx'], inplace=True)
 
     # move players col to front
     cols = list(long)
