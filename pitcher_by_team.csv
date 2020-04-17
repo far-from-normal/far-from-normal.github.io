@@ -5,12 +5,12 @@ Yates of Ketel,Julio Teheran,20.667,6.000,0.000,14.000,0.968,0.000
 Yates of Ketel,Sandy Alcantara,19.667,14.000,3.000,13.000,1.627,0.000
 Yates of Ketel,Dustin May,,,,,,
 Yates of Ketel,Kirby Yates,6.333,3.000,1.000,6.000,0.947,1.000
-Yates of Ketel,Aroldis Chapman,6.333,3.000,0.000,8.000,0.947,4.000
+Yates of Ketel,Aroldis Chapman,7.333,3.000,0.000,11.000,1.091,4.000
 Yates of Ketel,Edwin Diaz,8.667,2.000,2.000,12.000,1.385,0.000
 Yates of Ketel,Raisel Iglesias,10.333,4.000,1.000,7.000,1.258,4.000
 Yates of Ketel,Dellin Betances,7.333,6.000,1.000,7.000,1.500,0.000
 What's that Snell?,Blake Snell,11.667,3.000,0.000,11.000,0.771,0.000
-What's that Snell?,Aaron Nola,20.000,16.000,2.000,23.000,1.400,0.000
+What's that Snell?,Aaron Nola,26.000,19.000,4.000,32.000,1.423,0.000
 What's that Snell?,Robbie Ray,25.000,6.000,0.000,25.000,1.240,0.000
 What's that Snell?,Frankie Montas,23.333,14.000,3.000,23.000,1.286,0.000
 What's that Snell?,Jose Quintana,18.000,14.000,3.000,11.000,1.556,0.000
@@ -27,7 +27,7 @@ MF,Lance Lynn,20.667,7.000,3.000,14.000,0.823,0.000
 MF,Mike Minor,21.000,20.000,5.000,18.000,1.667,0.000
 MF,Drew Pomeranz,8.667,9.000,2.000,11.000,1.615,0.000
 MF,Will Smith,7.333,0.000,0.000,9.000,1.227,6.000
-MF,Scott Oberg,6.667,4.000,0.000,3.000,1.800,0.000
+MF,Scott Oberg,7.000,4.000,0.000,3.000,2.000,0.000
 MF,John Brebbia,8.333,7.000,4.000,11.000,1.200,0.000
 TBH,Madison Bumgarner,30.333,5.000,2.000,29.000,0.857,0.000
 TBH,Cole Hamels,,,,,,
@@ -35,20 +35,20 @@ TBH,Dallas Keuchel,24.000,8.000,1.000,18.000,1.292,0.000
 TBH,Michael Kopech,,,,,,
 TBH,Masahiro Tanaka,23.000,18.000,4.000,19.000,1.565,0.000
 TBH,Carlos Martinez,18.667,8.000,2.000,26.000,1.179,0.000
-TBH,Craig Kimbrel,5.667,2.000,0.000,7.000,1.235,3.000
+TBH,Craig Kimbrel,7.000,3.000,1.000,9.000,1.143,3.000
 TBH,Zack Britton,5.667,5.000,0.000,9.000,2.471,0.000
-TBH,Adam Ottavino,9.667,0.000,0.000,11.000,0.828,0.000
+TBH,Adam Ottavino,10.000,0.000,0.000,12.000,0.800,0.000
 TBH,Kenley Jansen,7.000,3.000,1.000,10.000,1.429,5.000
 The Knockers,Sonny Gray,27.333,14.000,3.000,26.000,1.463,0.000
 The Knockers,Zack Greinke,19.333,17.000,3.000,18.000,1.759,0.000
-The Knockers,Shane Bieber,27.000,8.000,3.000,33.000,1.000,0.000
+The Knockers,Shane Bieber,34.000,11.000,3.000,41.000,0.971,0.000
 The Knockers,Sean Manaea,30.667,9.000,3.000,24.000,1.043,0.000
 The Knockers,Chris Archer,27.000,6.000,2.000,24.000,0.815,0.000
-The Knockers,Liam Hendriks,10.000,0.000,0.000,12.000,0.300,4.000
-The Knockers,Will Harris,7.000,3.000,1.000,6.000,1.714,2.000
+The Knockers,Liam Hendriks,12.000,0.000,0.000,15.000,0.250,4.000
+The Knockers,Will Harris,8.000,3.000,1.000,6.000,1.625,2.000
 The Knockers,Sergio Romo,11.333,3.000,2.000,9.000,0.882,1.000
 The Knockers,Kevin Ginkel,7.667,1.000,1.000,10.000,0.783,0.000
-The Knockers,Yusmeiro Petit,6.667,2.000,0.000,7.000,1.050,0.000
+The Knockers,Yusmeiro Petit,7.333,2.000,0.000,8.000,1.091,0.000
 JD Power and Assoc.,Tyler Glasnow,22.333,11.000,3.000,21.000,1.343,0.000
 JD Power and Assoc.,Trevor Bauer,20.333,12.000,3.000,29.000,1.082,1.000
 JD Power and Assoc.,Hyun-Jin Ryu,18.333,15.000,3.000,20.000,1.473,0.000
@@ -58,27 +58,27 @@ JD Power and Assoc.,Adrian Houser,16.667,20.000,5.000,15.000,1.860,0.000
 JD Power and Assoc.,Mark Melancon,8.667,5.000,1.000,5.000,1.038,0.000
 JD Power and Assoc.,Alex Colome,7.333,6.000,4.000,5.000,1.636,3.000
 JD Power and Assoc.,Brandon Workman,7.000,0.000,0.000,6.000,1.286,1.000
-JD Power and Assoc.,Ian Kennedy,6.000,0.000,0.000,8.000,0.833,5.000
+JD Power and Assoc.,Ian Kennedy,7.333,0.000,0.000,10.000,0.682,5.000
 McKnight Auto Braves,Walker Buehler,26.000,5.000,2.000,41.000,0.692,0.000
 McKnight Auto Braves,Mike Clevinger,,,,,,
 McKnight Auto Braves,Luke Weaver,25.000,11.000,4.000,16.000,1.440,0.000
-McKnight Auto Braves,Eduardo Rodriguez,26.333,10.000,7.000,32.000,1.253,0.000
+McKnight Auto Braves,Eduardo Rodriguez,29.000,16.000,9.000,35.000,1.345,0.000
 McKnight Auto Braves,Aaron Civale,24.000,11.000,3.000,16.000,0.958,0.000
-McKnight Auto Braves,Taylor Rogers,6.667,3.000,1.000,6.000,1.800,1.000
-McKnight Auto Braves,Brad Hand,9.333,6.000,1.000,11.000,1.393,7.000
-McKnight Auto Braves,Tommy Kahnle,7.667,5.000,1.000,13.000,1.435,0.000
-McKnight Auto Braves,Tyler Duffey,7.667,1.000,1.000,9.000,1.304,0.000
+McKnight Auto Braves,Taylor Rogers,7.667,3.000,1.000,8.000,1.696,2.000
+McKnight Auto Braves,Brad Hand,10.333,6.000,1.000,11.000,1.258,8.000
+McKnight Auto Braves,Tommy Kahnle,8.333,8.000,1.000,14.000,1.800,0.000
+McKnight Auto Braves,Tyler Duffey,8.667,1.000,1.000,10.000,1.154,0.000
 McKnight Auto Braves,Jose Urquidy,15.667,9.000,2.000,13.000,1.660,0.000
 WillieWillieBummer,Gerrit Cole,26.000,15.000,5.000,42.000,1.154,0.000
 WillieWillieBummer,Chris Paddack,22.333,13.000,6.000,22.000,1.388,0.000
 WillieWillieBummer,Matthew Boyd,18.333,18.000,9.000,23.000,1.636,0.000
-WillieWillieBummer,Max Fried,25.667,9.000,1.000,22.000,1.247,0.000
+WillieWillieBummer,Max Fried,28.000,15.000,1.000,23.000,1.393,0.000
 WillieWillieBummer,Lance McCullers Jr.,23.333,15.000,6.000,22.000,1.071,0.000
 WillieWillieBummer,Josh James,20.000,11.000,5.000,19.000,1.150,0.000
 WillieWillieBummer,Aaron Bummer,6.667,1.000,1.000,5.000,1.350,5.000
 WillieWillieBummer,Freddy Peralta,24.000,3.000,2.000,32.000,1.042,0.000
 WillieWillieBummer,Giovanny Gallegos,8.667,4.000,4.000,9.000,0.923,5.000
-WillieWillieBummer,Corbin Burnes,9.333,1.000,1.000,17.000,0.857,1.000
+WillieWillieBummer,Corbin Burnes,10.000,1.000,1.000,18.000,0.900,1.000
 ReganSmash,Luis Castillo,29.333,10.000,4.000,29.000,0.920,0.000
 ReganSmash,Zac Gallen,18.333,19.000,2.000,22.000,2.018,0.000
 ReganSmash,Mike Soroka,33.333,8.000,1.000,27.000,0.870,0.000
@@ -86,8 +86,8 @@ ReganSmash,Yu Darvish,23.333,8.000,1.000,18.000,1.286,0.000
 ReganSmash,Ross Stripling,3.333,0.000,0.000,4.000,0.600,0.000
 ReganSmash,A.J. Puk,,,,,,
 ReganSmash,Caleb Smith,25.333,11.000,2.000,31.000,0.908,0.000
-ReganSmash,Roberto Osuna,8.667,2.000,1.000,8.000,0.923,3.000
-ReganSmash,Nick Anderson,4.667,1.000,1.000,8.000,1.286,4.000
+ReganSmash,Roberto Osuna,9.667,2.000,1.000,9.000,1.034,4.000
+ReganSmash,Nick Anderson,5.667,1.000,1.000,9.000,1.059,5.000
 ReganSmash,Joe Jimenez,4.667,3.000,1.000,7.000,1.286,1.000
 B.Ruth is Dominican,Jose Berrios,25.000,10.000,4.000,23.000,1.240,0.000
 B.Ruth is Dominican,Charlie Morton,22.333,12.000,1.000,17.000,1.612,0.000
@@ -96,20 +96,20 @@ B.Ruth is Dominican,Andrew Heaney,23.000,18.000,6.000,20.000,1.652,0.000
 B.Ruth is Dominican,Jose Leclerc,6.667,4.000,1.000,10.000,2.400,1.000
 B.Ruth is Dominican,Hector Neris,3.333,6.000,3.000,5.000,2.100,2.000
 B.Ruth is Dominican,Brandon Kintzler,10.333,2.000,0.000,8.000,0.968,2.000
-B.Ruth is Dominican,Sean Doolittle,8.667,3.000,0.000,7.000,1.154,1.000
+B.Ruth is Dominican,Sean Doolittle,9.667,3.000,0.000,8.000,1.138,1.000
 B.Ruth is Dominican,Keone Kela,6.667,4.000,2.000,11.000,1.350,1.000
 B.Ruth is Dominican,Gwang-Hyun Kim,,,,,,
 DC,Stephen Strasburg,20.333,16.000,4.000,18.000,1.721,0.000
-DC,Julio Urias,13.667,8.000,2.000,18.000,1.463,0.000
-DC,Brandon Woodruff,19.667,16.000,5.000,28.000,1.678,0.000
+DC,Julio Urias,19.667,11.000,3.000,22.000,1.322,0.000
+DC,Brandon Woodruff,25.667,18.000,7.000,34.000,1.481,0.000
 DC,Mitch Keller,22.667,8.000,3.000,20.000,1.235,0.000
-DC,Pablo Lopez,22.000,11.000,0.000,20.000,1.136,0.000
+DC,Pablo Lopez,25.333,16.000,2.000,24.000,1.303,0.000
 DC,Jesus Luzardo,26.333,16.000,7.000,31.000,1.329,0.000
 DC,Emilio Pagan,8.667,0.000,0.000,10.000,1.038,0.000
 DC,Trevor May,5.333,4.000,2.000,4.000,1.875,0.000
 DC,Shane Greene,7.667,5.000,1.000,10.000,1.826,2.000
-DC,Daniel Hudson,8.000,1.000,0.000,12.000,0.625,0.000
-A Red Sock,Jacob deGrom,25.667,5.000,2.000,37.000,1.052,0.000
+DC,Daniel Hudson,8.667,2.000,0.000,12.000,0.692,0.000
+A Red Sock,Jacob deGrom,32.333,9.000,4.000,46.000,1.082,0.000
 A Red Sock,Max Scherzer,27.333,6.000,5.000,37.000,0.841,0.000
 A Red Sock,Jack Flaherty,23.667,6.000,1.000,25.000,1.056,0.000
 A Red Sock,Archie Bradley,7.000,1.000,0.000,9.000,1.571,6.000
@@ -117,25 +117,25 @@ A Red Sock,Marcus Stroman,26.000,10.000,1.000,19.000,1.423,0.000
 A Red Sock,J.A. Happ,25.667,11.000,2.000,26.000,1.130,0.000
 A Red Sock,Steven Matz,27.667,7.000,1.000,20.000,0.976,0.000
 A Red Sock,Ken Giles,6.333,3.000,0.000,11.000,1.263,4.000
-A Red Sock,Matt Barnes,7.333,1.000,0.000,13.000,1.227,3.000
-A Red Sock,Hunter Harvey,8.667,4.000,2.000,9.000,1.269,0.000
-Againbetterlookinbro,Justin Verlander,26.667,11.000,4.000,36.000,1.125,0.000
+A Red Sock,Matt Barnes,8.333,2.000,0.000,15.000,1.440,3.000
+A Red Sock,Hunter Harvey,10.000,4.000,2.000,11.000,1.200,0.000
+Againbetterlookinbro,Justin Verlander,34.000,14.000,5.000,46.000,1.059,0.000
 Againbetterlookinbro,Clayton Kershaw,25.000,11.000,2.000,28.000,1.120,0.000
 Againbetterlookinbro,Corey Kluber,25.667,9.000,2.000,23.000,1.091,0.000
 Againbetterlookinbro,Garrett Richards,21.667,12.000,3.000,31.000,1.385,0.000
-Againbetterlookinbro,Diego Castillo,6.000,9.000,3.000,6.000,2.333,0.000
+Againbetterlookinbro,Diego Castillo,6.333,10.000,3.000,7.000,2.526,0.000
 Againbetterlookinbro,Joey Lucchesi,17.667,5.000,3.000,18.000,0.962,0.000
-Againbetterlookinbro,Josh Hader,5.333,1.000,1.000,13.000,1.313,3.000
+Againbetterlookinbro,Josh Hader,6.333,1.000,1.000,15.000,1.263,4.000
 Againbetterlookinbro,Michael Lorenzen,5.333,3.000,0.000,6.000,1.500,1.000
-Againbetterlookinbro,Pedro Baez,9.333,5.000,1.000,11.000,1.607,0.000
-Againbetterlookinbro,Ryan Pressly,9.333,4.000,0.000,12.000,1.286,2.000
+Againbetterlookinbro,Pedro Baez,10.333,5.000,1.000,11.000,1.452,0.000
+Againbetterlookinbro,Ryan Pressly,10.000,4.000,0.000,13.000,1.400,2.000
 Tyrants,Carlos Carrasco,,,,,,
 Tyrants,James Paxton,,,,,,
 Tyrants,Dinelson Lamet,22.333,9.000,3.000,29.000,1.164,0.000
 Tyrants,Kenta Maeda,15.333,18.000,4.000,14.000,1.826,0.000
 Tyrants,Ryan Yarbrough,14.000,3.000,0.000,12.000,0.857,0.000
-Tyrants,Yonny Chirinos,15.333,13.000,2.000,10.000,1.696,0.000
+Tyrants,Yonny Chirinos,21.333,13.000,2.000,17.000,1.547,0.000
 Tyrants,Joe Musgrove,25.667,12.000,3.000,20.000,1.052,0.000
 Tyrants,Chad Green,7.333,7.000,2.000,8.000,1.091,0.000
 Tyrants,Alex Wood,21.333,12.000,5.000,17.000,1.359,0.000
-Tyrants,Justin Wilson,4.333,2.000,0.000,8.000,2.077,0.000
+Tyrants,Justin Wilson,4.667,2.000,0.000,8.000,1.929,0.000
