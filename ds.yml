@@ -25,5 +25,6 @@ dependencies:
   - flask
   - beautifulsoup4
   - jupyter
+  - xlrd
   - pip:
     - tensorflow==2.1.0
