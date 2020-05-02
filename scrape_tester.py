@@ -14,7 +14,7 @@ def hover(hover_color="#ffff99"):
 
 # %% |||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
 base_url = "https://www.baseball-reference.com/sim/leagues/MLB/2020-"
-url_pitcher = base_url + "pitching.shtml"
+url_pitcher = base_url + "pitching.shtml" 
 url_batter = base_url + "batting.shtml"
 
 # %% Raw data pull
