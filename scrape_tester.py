@@ -20,7 +20,9 @@ url_batter = base_url + "batting.shtml"
 # %% Raw data pull
 p_data = get_data(url_pitcher)
 b_data = get_data(url_batter)
-b_data = b_data[(b_data["player"]!="Will Smith") & (b_data["team_ID"]!="ATL")]
+# b_data = b_data[(b_data["player"]!="Will Smith") & (b_data["team_ID"]!="ATL")]
+# b_data = b_data[~((b_data["player"]=="Will Smith") & (b_data["team_ID"]=="ATL"))]
+b_data = b_data[~((b_data["player"].isin(["Will Smith"])) & (b_data["team_ID"].isin(["ATL"])))]
 
 
 # %% augment data witha few stats

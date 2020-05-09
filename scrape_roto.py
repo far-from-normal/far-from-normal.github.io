@@ -43,8 +43,16 @@ def get_data(url):
     cols.insert(0, cols.pop(cols.index('player')))
     long = long.loc[:, cols]
 
-    long[cols[1:]] = long[cols[1:]].apply(pd.to_numeric, errors='coerce', axis=1)
+    cols_string = ["player", "team_ID"]
+    cols_numeric = [c for c in cols if c not in cols_string]
+
+    # long[cols[1:]] = long[cols[1:]].apply(pd.to_numeric, errors='coerce', axis=1)
+    long[cols_numeric] = long[cols_numeric].apply(pd.to_numeric, errors='coerce', axis=1)
     long['player'] = long['player'].str.strip()
+    long[['player']] = long[['player']] \
+        .apply(lambda x: x.str.normalize('NFKD') \
+        .str.encode('ascii', errors='ignore') \
+        .str.decode('utf-8'))
 
     return long
 
@@ -143,6 +151,7 @@ def assign_players_to_teams(
     df = teams.merge(
         data,
         how='left',
+        # how='inner',
         on=['player']
         )
     return df
