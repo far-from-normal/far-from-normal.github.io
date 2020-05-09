@@ -37,15 +37,13 @@ df_teams = process_teams(df_teams)
 df_p = assign_players_to_teams(
     p_data, 
     df_teams, 
-    'Arms'
+    'arms'
     )
 df_b = assign_players_to_teams(
     b_data,
     df_teams,
-    'Bats'
+    'bats'
     )
-
-
 
 df_p_output = df_p[["Team_Name", "player", 'IP', 'R', 'HR', 'SO', 'whip', 'SV']]
 df_p_output.columns = ["Team_Name", "player", 'IP', 'RA', 'HRA', 'SO', 'WHIP', 'SV']

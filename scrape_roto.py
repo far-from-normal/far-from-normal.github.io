@@ -52,7 +52,8 @@ def get_data(url):
     long[['player']] = long[['player']] \
         .apply(lambda x: x.str.normalize('NFKD') \
         .str.encode('ascii', errors='ignore') \
-        .str.decode('utf-8'))
+        .str.decode('utf-8')
+        .str.lower())
 
     return long
 
@@ -147,7 +148,8 @@ def assign_players_to_teams(
     teams,
     player_type
 ):
-    teams = teams[teams['Type'] == player_type]
+
+    teams = teams[teams['Type'] == player_type.lower()]
     df = teams.merge(
         data,
         how='left',
@@ -171,7 +173,9 @@ def process_teams(df):
     df[cols] = df[cols] \
         .apply(lambda x: x.str.normalize('NFKD') \
         .str.encode('ascii', errors='ignore') \
-        .str.decode('utf-8'))
+        .str.decode('utf-8')
+        .str.lower())
+
     df['player'] = df['player'] \
         .str.replace(r"\(.*\)", "") \
         .str.strip()
