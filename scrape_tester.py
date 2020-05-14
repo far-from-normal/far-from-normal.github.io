@@ -45,8 +45,8 @@ df_b = assign_players_to_teams(
     'bats'
     )
 
-df_p_output = df_p[["Team_Name", "player", 'IP', 'R', 'HR', 'SO', 'whip', 'SV']]
-df_p_output.columns = ["Team_Name", "player", 'IP', 'RA', 'HRA', 'SO', 'WHIP', 'SV']
+df_p_output = df_p[["Team_Name", "player", 'IP', 'R', 'HR', 'SO', 'whip', 'SV', 'Hold']]
+df_p_output.columns = ["Team_Name", "player", 'IP', 'RA', 'HRA', 'SO', 'WHIP', 'SVH', 'Hold']
 
 df_b_output = get_nsb(df_b)
 df_b_output = df_b_output[["Team_Name", "player", 'PA', 'R', 'HR', 'onbase_perc', 'slugging_perc', 'NSB']]
@@ -80,7 +80,7 @@ type_dict = {
     'HRA': np.int32,
     'SO': np.int32,
     'WHIP': np.float16,
-    'SV': np.int32,
+    'SVH': np.int32,
     'R_pts': np.float16,
     'HR_pts': np.float16,
     'OBP_pts': np.float16,
@@ -90,7 +90,7 @@ type_dict = {
     'HRA_pts': np.float16,
     'SO_pts': np.float16,
     'WHIP_pts': np.float16,
-    'SV_pts': np.float16,
+    'SVH_pts': np.float16,
     'Total_pts': np.float16,
 }
 
@@ -107,7 +107,7 @@ format_dict = {
     'HRA': "{:d}",
     'SO': "{:d}",
     'WHIP': "{:.3f}",
-    'SV': "{:d}",
+    'SVH': "{:d}",
     'R_pts': "{:.1f}",
     'HR_pts': "{:.1f}",
     'OBP_pts': "{:.1f}",
@@ -117,7 +117,7 @@ format_dict = {
     'HRA_pts': "{:.1f}",
     'SO_pts': "{:.1f}",
     'WHIP_pts': "{:.1f}",
-    'SV_pts': "{:.1f}",
+    'SVH_pts': "{:.1f}",
     'Total_pts': "{:.1f}",
 }
 

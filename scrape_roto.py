@@ -73,6 +73,9 @@ def get_slg(df):
 def get_whip(df):
     df['WHIP'] = (df['H'] + df['BB']) / df['IP']
     return df
+def get_svh(df):
+    df['SVH'] = df['SV'] + df['Hold']
+    return df
 def get_forward_ip(df):
     df['IP'] = \
         df['IP'].astype(str).str.split('.').str[0].astype(float) + \
@@ -92,13 +95,13 @@ def batter_stats_augment(df):
     return df
 
 def pitcher_stats_augment(df):
-    # R, HR, WHIP, SO, SV
+    # R, HR, WHIP, SO, SVH
     df = get_forward_ip(df)
     # df = get_whip(df)
     return df
 
 def team_pitcher_stats(df):
-    # R, HR, SO, WHIP, SV
+    # R, HR, SO, WHIP, SV, Hold
     cols = [
         "Team_Name",
         'IP',
@@ -107,14 +110,16 @@ def team_pitcher_stats(df):
         'SO',
         'H',
         'BB',
-        'SV'
+        'SV',
+        'Hold'
     ]
     df = df[cols]
     df = df.groupby(["Team_Name"]).sum()
     df.reset_index(inplace=True)
     df = get_whip(df)
-    df = df[["Team_Name", 'IP', 'R', 'HR', 'SO', 'WHIP', 'SV']]
-    df.columns = ["Team_Name", 'IP', 'RA', 'HRA', 'SO', 'WHIP', 'SV']
+    df = get_svh(df)
+    df = df[["Team_Name", 'IP', 'R', 'HR', 'SO', 'WHIP', 'SVH']]
+    df.columns = ["Team_Name", 'IP', 'RA', 'HRA', 'SO', 'WHIP', 'SVH']
     return df
 
 def team_batter_stats(df):
@@ -204,7 +209,7 @@ def get_roto_stats(df_p, df_b):
         'HRA': False,	
         'SO': True,
         'WHIP': False,
-        'SV': True,
+        'SVH': True,
     }
 
     exclude_rank = ['PA', 'IP']
@@ -217,7 +222,7 @@ def get_roto_stats(df_p, df_b):
                 method='average', 
                 ascending=order) #.astype(np.int32)
 
-    roto_stats['Total_pts'] = roto_stats.loc[:, 'R_pts':'SV_pts'].sum(axis = 1)
+    roto_stats['Total_pts'] = roto_stats.loc[:, 'R_pts':'SVH_pts'].sum(axis = 1)
     roto_stats['Rank'] = roto_stats['Total_pts'].rank(
         method='average', 
         ascending=False) #.astype(np.int32)
