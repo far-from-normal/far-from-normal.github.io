@@ -38,11 +38,16 @@ print(dfr.head(25))
 
 hm = dfr.reset_index().pivot(columns='Time', index='Date', values='sleep_bool')
 
+hm.to_csv("heatmap.csv")
+
 print(hm)
 
+plt.clf()
 fig, ax = plt.subplots(figsize=(15,10))
 sns.heatmap(hm, cmap="YlGnBu", cbar=False)
 ax.tick_params(left=False, bottom=False)
 ax.set_xticks([])
 ax.set_yticks([])
 plt.savefig('sleep_map.png', dpi=300)
+# plt.show()
+plt.close()
